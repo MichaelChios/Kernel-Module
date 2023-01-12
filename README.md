@@ -24,5 +24,6 @@
 3) sudo rmmod process-mm-module # unload normally 
 4) journalctl --since "10 minutes ago" | grep kernel (ελέγχει τα logs του συστήματος τα τελευταία 10 λεπτά και τυπώνει τα μηνύματα των συναρτήσεων εισόδου-εξόδου) 
 
-Report1.pdf -> hello module, list processes module, list children module 
+Report1.pdf -> hello module, list processes module, list children module
+
 Report2.pdf -> kmalloc module, process mm module 
