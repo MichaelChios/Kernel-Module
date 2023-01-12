@@ -17,3 +17,9 @@
 1) sudo insmod module_name.ko
 2) sudo rmmod module_name (αφαιρεί το module)
 3) journalctl --since "10 minutes ago" | grep kernel (ελέγχει τα logs του συστήματος τα τελευταία 10 λεπτά και τυπώνει τα μηνύματα των συναρτήσεων εισόδου-εξόδου)
+
+Για την φόρτωση του process-mm-module:
+1) Εκτελέστε το threads.c και πάρτε το pid του 
+2) sudo insmod process-mm-module PID=$PID # specify PID when loading module 
+3) sudo rmmod process-mm-module # unload normally 
+4) journalctl --since "10 minutes ago" | grep kernel (ελέγχει τα logs του συστήματος τα τελευταία 10 λεπτά και τυπώνει τα μηνύματα των συναρτήσεων εισόδου-εξόδου)
